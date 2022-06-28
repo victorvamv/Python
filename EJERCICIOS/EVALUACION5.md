@@ -2,6 +2,7 @@
 ### 5.1 Ejercicio 1 (2 puntos)
 Programa que imprima si el número es positivo o negativo
 
+
 numero_posyneg = float(input('Agrega cualquier numero real'))
 
 if numero_posyneg < 0:
