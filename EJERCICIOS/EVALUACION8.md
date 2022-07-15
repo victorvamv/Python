@@ -26,12 +26,12 @@ cantidad de apariciones de cada carácter en la cadena.
 Ejemplo: si se ingresa "paloma" p=1 a=1 l=1 o=1 m=1
 
 
-dic_texto = {}
+ dic_texto = {}
 
-texto = input("Escribe una palabra")
+ texto = input("Escribe una palabra")
 
 
-for text in texto:
+ for text in texto:
 
     if text in dic_texto:
     
@@ -41,7 +41,7 @@ for text in texto:
     
         dic_texto[text] = 1
 
-for x,y in dic_texto.items():
+ for x,y in dic_texto.items():
 
     print(x,"=",y)
 
