@@ -2,39 +2,39 @@
 Proyecto Básico de Python (El Ahorcado).
 Basado en el proyecto de: Kylie Ying (@kylieyying). 
 """
-import random
-import string
-from palabras import palabras
-from ahorcado_diagramas import vidas_diccionario_visual
+import random                            #se importa la libreria random
+import string                           # se importa la libreria string
+from palabras import palabras          # se trae la libreria palabras y se importa la variable palabras
+from ahorcado_diagramas import vidas_diccionario_visual  # del archivo ahorcado_diagrama se trae el diccionario donde se tienen las opciones
 
 
-def obtener_palabra_válida(palabras):
-    palabra = random.choice(palabras) 
+def obtener_palabra_válida(palabras):   # se crea la funcion para obtener una palabra al azar
+    palabra = random.choice(palabras)   # se crea la variable para que se elija de forma aleatoria una palabra de la variable palabras
 
 
-    while '-' in palabra or ' ' in palabra:
+    while '-' in palabra or ' ' in palabra:    # while para escoger seguir escogiendo la palabra de forma aleatoria
         palabra = random.choice(palabras)
 
-    return palabra.upper()
+    return palabra.upper()                     # volvera la plabra pero cada letra en mayuscula
 
 
-def ahorcado():
+def ahorcado():                                 # funcion llamada ahorcado 
 
-    print("=======================================")
+    print("=======================================")      # se imprime mensaje al jugador
     print(" ¡Bienvenido(a) al juego del Ahorcado! ")
     print("=======================================")
 
-    palabra = obtener_palabra_válida(palabras)
+    palabra = obtener_palabra_válida(palabras)        # se crean todas las variables donde se guardaran el progreso del juego del ahorcado
     letras_por_adivinar = set(palabra)  
     abecedario = set(string.ascii_uppercase) 
     letras_adivinadas = set()  
 
-    vidas = 7
+    vidas = 7                   # funcion del número de vidas que se tiene
 
 
-    while len(letras_por_adivinar) > 0 and vidas > 0:
+    while len(letras_por_adivinar) > 0 and vidas > 0:               # se termina el juego cuando las vidas lleguen a cero
 
-        print(f"Te quedan {vidas} vidas y has usado estas letras: {' '.join(letras_adivinadas)}")
+        print(f"Te quedan {vidas} vidas y has usado estas letras: {' '.join(letras_adivinadas)}")   # se imprime le número de vidas que quedan y las letras que has usado
 
       
         palabra_lista = [letra if letra in letras_adivinadas else '-' for letra in palabra]
