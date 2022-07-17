@@ -51,10 +51,84 @@ Gracias, vuelva prontos
 
 Opción no válida, en caso de ingresar un número fuera de las opciones
 
+
+while True:
+    opcion = input('''
+    Menú de recomendaciones
+
+1) Literatura
+2) Cine
+3) Música
+4) Videojuegos
+5) Salir
+
+    ''')
+
+    if opcion == "1":
+        print('''
+        Lecturas recomendables:
+
+        Esperándolo a Tito y otros cuentos de fútbol (Eduardo Sacheri)
+        El juego de Ender (Orson Scott Card)
+        El sueño de los héroes (Adolfo Bioy Casares)''')
+    elif opcion == "2":
+        print('''
+        Películas recomendables:
+
+        Matrix (1999)
+        El último samuray (2003)
+        Cars (2006)''')
+    elif opcion == "3":
+        print('''
+        Discos recomendables:
+
+        Despedazado por mil partes (La Renga, 1996)
+        Búfalo (La Mississippi, 2008)
+        Gaia (Mago de Oz, 2003)''')
+    elif opcion == "4":
+        print('''
+        Videojuegos clásicos recomendables
+        
+        Día del tentáculo (LucasArts, 1993)
+        Terminal Velocity (Terminal Reality/3D Realms, 1995)
+        Death Rally (Remedy/Apogee, 1996)''')
+    elif opcion == "5":
+        print('Gracias, vuelva prontos')
+    else:
+        print('Opcion no valida')
+    break
+
+
 ## Ejercicio 2 (1.5 puntos)
 Se pide por teclado un número y nos imprime los números primos que hay previos a este número.
 
 Ejemplo: si ingresamos el 10 nos imprima del 1 a ese 10 cuales números son primos.
+
+import math
+
+
+primoNumero = 0
+calculos = 0
+esPrimo = True
+
+numero = int(input("Ingrese hasta que número busca números primos: "))
+
+
+
+
+
+
+
+for numeroActual in range( not 0,numero +1):
+    for divisor in range( 2, int(math.sqrt(numeroActual))+1 ):
+        
+        if numeroActual % divisor == 0:
+            esPrimo = False
+            break
+    if esPrimo:
+        
+        print(numeroActual)
+    esPrimo = True
 
 
 ## Ejercicio 3 (1.5 puntos)
