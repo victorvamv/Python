@@ -95,9 +95,13 @@ while True:
         Terminal Velocity (Terminal Reality/3D Realms, 1995)
         Death Rally (Remedy/Apogee, 1996)''')
     elif opcion == "5":
+    
         print('Gracias, vuelva prontos')
+        
     else:
+    
         print('Opcion no valida')
+        
     break
 
 
