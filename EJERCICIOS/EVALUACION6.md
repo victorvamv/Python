@@ -50,6 +50,7 @@ opcion  5:
 Gracias, vuelva prontos
 
 Opción no válida, en caso de ingresar un número fuera de las opciones
+## RESPUESTA
 
 
 while True:
@@ -103,6 +104,7 @@ while True:
 Se pide por teclado un número y nos imprime los números primos que hay previos a este número.
 
 Ejemplo: si ingresamos el 10 nos imprima del 1 a ese 10 cuales números son primos.
+## RESPUESTA
 
 import math
 
@@ -140,3 +142,4 @@ después de los 20 meses.
 Al finalizar los 20 meses pago en total:
 
 primer mes pago 10, segundo mes pago 20, tercer mes pago 30, cuarto mes pago 40, etc.
+## RESPUESTA
