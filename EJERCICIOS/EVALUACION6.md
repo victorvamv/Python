@@ -67,6 +67,7 @@ while True:
     ''')
 
     if opcion == "1":
+    
         print('''
         Lecturas recomendables:
 
@@ -74,6 +75,7 @@ while True:
         El juego de Ender (Orson Scott Card)
         El sueño de los héroes (Adolfo Bioy Casares)''')
     elif opcion == "2":
+    
         print('''
         Películas recomendables:
 
@@ -81,6 +83,7 @@ while True:
         El último samuray (2003)
         Cars (2006)''')
     elif opcion == "3":
+    
         print('''
         Discos recomendables:
 
@@ -88,6 +91,7 @@ while True:
         Búfalo (La Mississippi, 2008)
         Gaia (Mago de Oz, 2003)''')
     elif opcion == "4":
+    
         print('''
         Videojuegos clásicos recomendables
         
