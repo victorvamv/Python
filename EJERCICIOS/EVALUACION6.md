@@ -153,4 +153,22 @@ después de los 20 meses.
 Al finalizar los 20 meses pago en total:
 
 primer mes pago 10, segundo mes pago 20, tercer mes pago 30, cuarto mes pago 40, etc.
-## RESPUESTA
+### RESPUESTA
+
+contador = 0
+mes = 0
+total = 0
+pagos = []
+while contador < 100:
+    
+    total = total + mes
+    contador = contador + 1
+    mes = mes + 1
+
+    pagos.append(' el '+  str(contador)+ ' mes pagó '+ str(mes))
+    
+    
+
+print(pagos)
+print(total)
+
