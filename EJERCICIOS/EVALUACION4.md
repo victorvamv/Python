@@ -4,7 +4,7 @@
 Realizar un programa que inicialice una lista con 10 valores aleatorios (del 1 al 10)
 y posteriormente muestre en pantalla cada elemento de la lista junto con su
 cuadrado y su cubo.
-Respuesta:
+### Respuesta
 
 import random
 
@@ -67,6 +67,8 @@ Crea una lista e inicializarla con 5 cadenas de caracteres leídas por teclado. 
 los elementos de la lista en otra lista pero en orden inverso, y muestra sus
 elementos por la pantalla.
 
+### Respuesta
+
 cadena = []
 
 cadena_123 = []
@@ -95,6 +97,8 @@ print(cadena_123)
 Se quiere realizar un programa que lea por teclado las 5 notas obtenidas por un
 alumno (comprendidas entre 0 y 10). A continuación debe mostrar todas las notas,
 la nota media, la nota más alta que ha sacado y la menor.
+
+### Respuesta
 
 notas_1 = []
 
@@ -143,6 +147,8 @@ final el programa nos mostrará la lista de alumnos y la nota media obtenida por
 cada uno de ellos. Nota: si se introduce el nombre de un alumno que ya existe el
 programa nos dará un error.
 
+### Respuesta
+
 grupo = {}
 
 alumnos = []
@@ -186,6 +192,8 @@ Crea una tupla con los meses del año, pide números al usuario, si el número e
 entre 1 y la longitud máxima de la tupla, muestra el contenido de esa posición sino
 muestra un mensaje de error. El programa termina cuando el usuario introduce un
 cero.
+
+### Respuesta
 
 
 meses = 'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'
