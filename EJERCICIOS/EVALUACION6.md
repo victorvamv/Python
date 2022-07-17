@@ -110,29 +110,31 @@ Ejemplo: si ingresamos el 10 nos imprima del 1 a ese 10 cuales números son prim
 import math
 
 
-primoNumero = 0
-calculos = 0
-esPrimo = True
-
-numero = int(input("Ingrese hasta que número busca números primos: "))
 
 
 
+primo = True
+
+numero = int(input('Introduce el número para buscar anotar el primo'))
 
 
-
-
-for numeroActual in range( not 0,numero +1):
-    for divisor in range( 2, int(math.sqrt(numeroActual))+1 ):
+for num in range( not 0,numero + 1):
+    
+    for divisor in range( 2, int(math.sqrt(num) + 1) ):
         
-        if numeroActual % divisor == 0:
-            esPrimo = False
-            break
-    if esPrimo:
-        
-        print(numeroActual)
-    esPrimo = True
+        if num % divisor == 0:
 
+            primo = False
+
+            break   
+
+    
+    if primo:
+        
+        print(num)
+    
+
+    primo = True 
 
 ## Ejercicio 3 (1.5 puntos)
 Una persona adquirió un producto para pagar en 20 meses. El primer mes pagó
