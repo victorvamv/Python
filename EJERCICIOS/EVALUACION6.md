@@ -54,6 +54,7 @@ Opción no válida, en caso de ingresar un número fuera de las opciones
 
 
 while True:
+    
     opcion = input('''
     Menú de recomendaciones
 
