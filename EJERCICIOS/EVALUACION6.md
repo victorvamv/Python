@@ -167,7 +167,7 @@ pagos = []
 while contador < 100:
     
     total = total + mes
-    contador = contador + 10
+    contador = contador + 1
     mes = mes + 10
 
     pagos.append(' el '+  str(contador)+ ' mes pagó '+ str(mes))
