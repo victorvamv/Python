@@ -164,7 +164,7 @@ total = 0
 
 pagos = []
 
-while contador < 100:
+while contador < 20:
     
     total = total + mes
     contador = contador + 1
