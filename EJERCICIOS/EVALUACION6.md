@@ -175,5 +175,6 @@ while contador < 100:
     
 
 print(pagos)
+
 print('En total pagó: ', total)
 
