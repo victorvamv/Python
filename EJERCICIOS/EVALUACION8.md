@@ -6,6 +6,8 @@ valores sean los cuadrados de las claves.
 
 Ejemplo: si se ingresa el 4 imprima el cuadrado de 1, de 2, de 3 y de 4
 
+### RESPUESTA
+
 num = int(input('ingresa un número entero'))
 
 dic_num = {}
@@ -24,6 +26,9 @@ Escribe un programa que lea una cadena y devuelva un diccionario con la
 cantidad de apariciones de cada carácter en la cadena.
 
 Ejemplo: si se ingresa "paloma" p=1 a=1 l=1 o=1 m=1
+
+
+### RESPUESTA
 
 
  dic_texto = {}
@@ -52,6 +57,8 @@ guardar los precios de las distintas frutas. El programa pedirá el nombre de la
 y la cantidad que se ha vendido y nos mostrará el precio final de la fruta a partir de
 los datos guardados en el diccionario. Si la fruta no existe nos dará un error. Tras
 cada consulta el programa nos preguntará si queremos hacer otra consulta.
+
+### RESPUESTA
 
 frutas = {"uvas":20, "kiwi":40, "platano":25, "tuna": 20}
 
