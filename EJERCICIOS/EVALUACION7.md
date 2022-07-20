@@ -12,6 +12,52 @@ entradas de datos.
 
 ● esMayorDeEdad(): Devuelve un valor lógico indicando si es mayor de edad.
 
+### RESPUESTA
+
+class Persona:
+
+    def __init__(self, nombre, edad, DNI):
+        self.nombre = nombre
+        self.edad = edad
+        self.DNI = DNI
+
+    @property
+    def nombre(self):
+        return self.__nombre
+
+    @nombre.setter
+    def nombre(self,nombre):
+        self.__nombre = nombre
+
+    
+    @property
+    def edad(self):
+        return self.__edad
+    
+    @edad.setter
+    def edad(self,edad):
+        if edad != int:
+            print('Dato incorrecto')
+            self.__edad = 0
+        else:
+            self.__edad = edad
+    
+    @property
+    def DNI(self):
+        return self.__DNI
+
+
+    @DNI.setter
+    def DNI(self,DNI):
+        self.__DNI = DNI
+
+
+    def mostrar(self):
+        return 'Nombre:', self.nombre, 'Edad:', self.nombre, 'DNI:', self.DNI
+
+    def esMayorDeEdad(self):
+        return self.nombre >= 18
+
 
 ## Ejercicio 2 (2 puntos)
 Crea una clase llamada Cuenta que tendrá los siguientes atributos: titular (que es
