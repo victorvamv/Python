@@ -17,6 +17,8 @@ Ejemplo. imprime una multiplicacion (9 * 8 =  )por teclado se ingresa la respues
 
 Recuerda el import random
 
+### RESPUESTA
+
 
 import random
 
@@ -45,6 +47,8 @@ print('# de aciertos:', aciertos)
 ## Ejercicio 2 (2 puntos)
 Obtener el cuadrado de todos los elementos en la lista.
 
+### RESPUESTA
+
 
 
 
@@ -58,6 +62,8 @@ list(map(cuadrado,Lista)
 
 ## Ejercicio 3 (2 puntos)
 Obtener la cantidad de elementos mayores a 5 en la tupla.
+
+### RESPUESTA
 
 
 
@@ -73,6 +79,8 @@ tuple(filter(mayor, tupla))
 
 ## Ejercicio 4 (2 puntos)
 Obtener la suma de todos los elementos en la lista
+
+### RESPUESTA
 
 
 
