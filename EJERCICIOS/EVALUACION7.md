@@ -77,6 +77,36 @@ introducida es negativa, no se hará nada.
 ● retirar(cantidad): se retira una cantidad a la cuenta. La cuenta puede estar
 en números rojos.
 
+### RESPUESTA
+
+class Cuenta:
+
+    def __init__(self, titular, cantidad):
+        self.titular = titular
+        self.cantidad = cantidad
+
+    @property
+    def titular(self):
+        return self.__titular
+    
+    @titular.setter
+    def titular(self,titular):
+        self.__titular = titular
+
+    @property
+    def cantidad(self):
+        return self.cantidad
+
+    def mostrar(self):
+        return 'Titular:', self.titular, 'Cantidad:',self.cantidad
+    
+    def ingresar(self,cantidad):
+        if cantidad > 0:
+            self.__cantidad = self.__cantidad + cantidad
+    
+    def retirar(self,cantidad):
+        if cantidad > 0:
+            self.__cantidad = self.__cantidad - cantidad
 
 ## Ejercicio 3 (2 puntos)
 Vamos a definir ahora una “Cuenta Joven”, para ello vamos a crear una nueva
@@ -99,3 +129,32 @@ falso en caso contrario.
 bonificación de la cuenta.
 
 ● Piensa los métodos heredados de la clase madre que hay que reescribir.
+
+### RESPUESTA
+
+class CuentaJoven(Cuenta):
+
+    def __init__(self,titular,cantidad,bonificacion):
+        super().__init__(titular,cantidad)
+        self.bonificacion = bonificacion
+
+    @property
+    def bonificacion(self):
+        return self.__bonificacion
+
+    @bonificacion.setter
+    def bonificacion(self,bonificacion):
+        self.__bonificacion = bonificacion
+    
+    def mostrar(self):
+        return 'Titular:', self.titular, 'Cantidad:', self.cantidad, 'Bonificacion:', self.bonificacion
+
+    def titularvalido(self):
+        return self.titular < 25 and self.titular > 18
+
+    def retirar(self,cantidad):
+        if not self.titularvalido():
+            print('Retiro denegado')
+    
+        elif cantidad > 0:
+            super().retirar(cantidad)
